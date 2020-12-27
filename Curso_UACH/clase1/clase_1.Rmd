@@ -1,0 +1,16 @@
+---
+title: "clase_1"
+author: "peter"
+date: "27-12-2020"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# El tidyverse
+
+## Estructura de datos en R
+
+Vectores: Un conjunto lineal de datos.
