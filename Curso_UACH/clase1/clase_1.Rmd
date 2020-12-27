@@ -14,3 +14,38 @@ knitr::opts_chunk$set(echo = TRUE)
 ## Estructura de datos en R
 
 Vectores: Un conjunto lineal de datos.
+Matrix: Una tabla con solo numeros.
+Data Frame: Una tabla donde cada columna tiene un tipo de dato.
+List: Aqui puede contener las anteriores categorias.
+
+### Vector
+
+Secuencia lineal de datos, puede ser de muchos tipos (numéricos, carácteres, lógico, etc.)
+Ejemplo:
+```{r}
+data(uspop)
+uspop
+```
+El comando "data()" carga base de datos que ya se encuentran en R.
+
+Otro ejemplo de vector se consigue asi:
+```{r}
+# crear un vector x
+x <- c(2,3,4,5,3,4,6,3,7,6,4)
+x
+```
+
+A este vector x creado, se le pueden aplicar varias funciones
+```{r}
+mean(x) # media
+sd(x) # desviación estandar
+x * 4 # multiplica cada valor de x por 4
+```
+
+El sub-seteo de los vectores se consigue de varias maneras, una de las mas simples se muestran a continuación:
+```{r}
+uspop[5] # obtiene el 5to elemento
+uspop[c(5,8)] # obtiene el 5to y 8vo elemento
+uspop[5:8] # obtiene los valores del 5to al 8vo elemento
+```
+
